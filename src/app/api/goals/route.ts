@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
-import Goal from '@/models/Goal';
+import { Goal } from '@/models'; // 修改为从 models 索引文件导入
 import { connectToDatabase } from '@/lib/db';
 
 export async function GET(req: NextRequest) {

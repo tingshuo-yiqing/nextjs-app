@@ -39,8 +39,10 @@ const goalSchema = new mongoose.Schema({
   title: { type: String, required: true },
   description: { type: String },
   targetDate: { type: Date },
-  status: { type: String, enum: ['pending', 'in-progress', 'completed'], default: 'pending' },
+  status: { type: String, enum: ['not_started', 'in_progress', 'completed'], default: 'not_started' },
   progress: { type: Number, default: 0 },
+  type: { type: String, enum: ['short_term', 'long_term'], default: 'short_term' },
+  points: { type: Number, default: 0 },
   category: { type: String },
   createdAt: { type: Date, default: Date.now },
   updatedAt: { type: Date, default: Date.now }
