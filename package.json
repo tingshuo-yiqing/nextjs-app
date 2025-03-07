@@ -9,11 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ducanh2912/next-pwa": "^10.2.9",
     "@heroicons/react": "^2.1.1",
     "@types/mongoose": "^5.11.97",
+    "@types/next-auth": "^3.13.0",
     "mongoose": "^8.0.3",
     "next": "14.0.4",
+    "next-auth": "^4.24.11",
     "next-themes": "^0.2.1",
+    "puppeteer": "^24.4.0",
     "react": "^18",
     "react-dom": "^18"
   },
