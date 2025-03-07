@@ -1,25 +1,23 @@
 'use client';
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google"; // 替换为 Inter 字体
 import { ThemeProvider } from "next-themes";
 import Navbar from "@/components/layout/Navbar";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// 使用 Inter 字体替代 Geist
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+// 如果需要等宽字体，可以使用 Roboto Mono
+import { Roboto_Mono } from "next/font/google";
+const robotoMono = Roboto_Mono({
+  variable: "--font-roboto-mono",
   subsets: ["latin"],
 });
-
-export const metadata: Metadata = {
-  title: "学习助手 - 简洁高效的学习管理平台",
-  description: "一个帮助你管理学习目标、笔记和日记的平台",
-};
 
 export default function RootLayout({
   children,
@@ -29,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="zh-CN" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${robotoMono.variable} antialiased`}
       >
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <div className="flex flex-col min-h-screen">
