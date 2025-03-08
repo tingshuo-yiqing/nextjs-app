@@ -14,7 +14,7 @@ require('dotenv').config();
 require('../src/models');
 
 // 数据库连接URI
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/study-assistant';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/nextjs-app';
 
 // 备份目录
 const BACKUP_DIR = path.join(__dirname, '../backups');

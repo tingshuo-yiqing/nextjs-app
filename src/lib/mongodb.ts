@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/study-assistant';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/nextjs-app';
 
 if (!MONGODB_URI) {
   throw new Error('请在环境变量中设置 MONGODB_URI');

@@ -133,4 +133,4 @@
 
 ---
 
-如有更多问题，请联系我们的支持团队：support@study-assistant.com
+如有更多问题，请联系我们的支持团队：support@nextjs-app.com

@@ -77,7 +77,7 @@
    ```
    并填写必要的环境变量：
    ```
-   MONGODB_URI=mongodb://localhost:27017/study-assistant
+   MONGODB_URI=mongodb://localhost:27017/nextjs-app
    NEXTAUTH_SECRET=your-secret-key
    NEXTAUTH_URL=http://localhost:3000
    ```
